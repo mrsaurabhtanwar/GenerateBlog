@@ -11,3 +11,4 @@ langsmith
 duckduckgo-search
 langchain-community
 ddgs
+pytest

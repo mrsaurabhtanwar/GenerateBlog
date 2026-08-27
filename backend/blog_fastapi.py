@@ -5,7 +5,7 @@ from fastapi.responses import StreamingResponse
 from backend.blog_generation import workflow
 from database.blog_database import sessionLocal, BLOGTABLE
 
-app = FastAPI(title="AI Prompting")
+app = FastAPI(title="Agentic Blog Writer API", description="API for generating blogs using LangGraph and FastAPI", version="1.0.0")
 
 def get_db():
     db = sessionLocal()

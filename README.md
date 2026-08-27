@@ -76,19 +76,32 @@ flowchart TD
 
 ```text
 GenerateBlog/
+├── .github/
+│   └── workflows/
+│       └── ci.yml               # GitHub Actions CI automated pipeline
 ├── backend/
 │   ├── __init__.py
-│   ├── blog_generation.py     # Core LangGraph graph, state, and nodes
-│   └── blog_fastapi.py        # FastAPI endpoints & streaming logic
+│   ├── blog_fastapi.py          # FastAPI REST server with CORS & streaming
+│   └── blog_generation.py       # LangGraph agentic self-correction graph
 ├── database/
 │   ├── __init__.py
-│   ├── blog_database.py       # SQLAlchemy ORM model and SQLite engine
-│   └── blogs_database.db      # SQLite persistent storage
+│   ├── blog_database.py         # SQLAlchemy ORM models & session
+│   └── blogs_database.db        # SQLite database (gitignored)
 ├── frontend/
-│   └── app.py                 # Streamlit web interface
-├── requirements.txt           # Project dependencies
-├── .env                       # API keys and environment variables
-└── README.md                  # Project documentation
+│   └── app.py                   # Streamlit web interface
+├── tests/
+│   ├── __init__.py
+│   ├── test_api.py              # FastAPI endpoint tests
+│   └── test_database.py         # Database CRUD unit tests
+├── .dockerignore                # Excludes .venv, __pycache__, .env
+├── .env.example                 # Environment variables template
+├── .gitignore                   # Python, SQLite & environment exclusions
+├── docker-compose.yml           # Multi-container orchestration
+├── Dockerfile.backend           # Backend container image
+├── Dockerfile.frontend          # Frontend container image
+├── LICENSE                      # MIT License
+├── README.md                    # Documentation with video & architecture
+└── requirements.txt             # Pinned, production dependencies
 ```
 
 ---
