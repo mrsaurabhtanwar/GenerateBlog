@@ -1,0 +1,10 @@
+__pycache__
+*.pyo
+*.pyd
+.Python
+.venv/
+.venv
+.env
+.git
+.gitignore
+*.png

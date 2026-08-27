@@ -1,0 +1,13 @@
+langgraph
+langchain
+ipykernel
+langchain-groq
+dotenv
+streamlit
+fastapi
+uvicorn
+sqlalchemy
+langsmith
+duckduckgo-search
+langchain-community
+ddgs
