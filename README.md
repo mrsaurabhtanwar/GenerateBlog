@@ -115,7 +115,7 @@ GenerateBlog/
 ### 2. Clone Repository & Setup Virtual Environment
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/mrsaurabhtanwar/GenerateBlog.git
 cd GenerateBlog
 
 # Create and activate virtual environment
